@@ -20,7 +20,7 @@ def rmv_zero_to_three(num):
     k = 0                                    # sets counter
 
     for n in lst:                            # iterates through list
-        if n is '0' or '1' or '2' or '3':    # if it finds a 0-3 inclusive within, it changes it to a larger number
+        if n in ['0', '1', '2', '3']:    # if it finds a 0-3 inclusive within, it changes it to a larger number
             lst[k] = str(randint(4, 9))
         k += 1
 
